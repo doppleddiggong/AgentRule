@@ -8,7 +8,8 @@
 ## 2. 핵심 규칙 (Core Rules)
 - Conventional Commits `<type>(<scope>): <subject>` 사용  
 - subject ≤ 72자, 마침표 금지, 한글  
-- body: 변경 이유, 핵심 변경, 위험/영향, 롤백 방법 (100자 랩핑), 주석은 한글로 작성  
+- body: 변경 이유, 핵심 변경, 위험/영향, 롤백 방법 (100자 랩핑), 주석은 한글로 작성
+- body의 설명문은 간결하게 작성 (예: 캐릭터 사망시 승패 결정, 전투 결과에 따른 캐릭터 및 AI 행동 제어 시스템 구현)
 - footer: 관련 이슈, Breaking Change, Co-authored-by  
 - 테스트 우선: 실패 케이스/재현/성능영향 bullet 3줄  
 - 로그 포인트: 관찰 가능한 `UE_LOG` 제안  
