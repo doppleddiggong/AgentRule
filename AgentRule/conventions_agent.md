@@ -132,3 +132,22 @@
 *   `DEFINE_SUBSYSTEM_GETTER_INLINE` 매크로를 사용하여 서브시스템 접근자를 간결하게 정의합니다.
 
 ---
+
+## 6.10. UObject 참조 관리 (UObject Reference Management)
+
+### 6.10.1. TObjectPtr과 UPROPERTY()
+클래스 멤버 변수로 `TObjectPtr` 또는 `UObject` 파생 클래스의 포인터를 선언할 때는 **반드시 `UPROPERTY()` 매크로를 함께 사용해야 합니다.**
+
+이를 누락하면 해당 객체는 가비지 컬렉션(GC)에 의해 예기치 않게 메모리에서 해제될 수 있으며, 이는 런타임 크래시 또는 찾기 어려운 버그의 원인이 됩니다.
+
+-   **올바른 예 (Good Practice):**
+    ```cpp
+    UPROPERTY()
+    TObjectPtr<UStaticMesh> MyMesh;
+    ```
+
+-   **잘못된 예 (Bad Practice):**
+    ```cpp
+    // UPROPERTY()가 없으므로 MyMesh가 GC에 의해 수거될 수 있음!
+    TObjectPtr<UStaticMesh> MyMesh;
+    ```

@@ -36,10 +36,10 @@
 ---
 
 ## 커밋 메세지 자동 생성
-- 커밋 메세지 자동 생성 요청을 받으면 에이전트 스펙은 AgentRule/commit-agent.md 참조
+- 커밋 메세지 자동 생성 요청을 받으면 에이전트 스펙은 `AgentRule/commit_agent.md` 참조
 
 ## 코딩 컨벤션 (Coding Conventions)
-- 코드 자동 생성 요청을 받으면 에이전트 스펙은 AgeuntRule/conventions-agent.md 참조
+- 코드 자동 생성 요청을 받으면 에이전트 스펙은 `AgeuntRule/conventions_agent.md` 참조
 
 
 ## 디버그 에이전트 워크플로우 (Debug Agent Workflow)
@@ -59,6 +59,6 @@
 - **목적**: 일일 업무 일지 및 30일 요약 보고서 자동 생성.
 - **활성화**: 에이전트 구동 시 또는 수동 요청 시 활성화.
 - **동작**:
-  - `AgentRule/DevLog-Agent.md`에 정의된 지침에 따라 Git 커밋을 분석하여 DevLog를 생성한다.
+  - `AgentRule/devlog_agent.md`에 정의된 지침에 따라 Git 커밋을 분석하여 DevLog를 생성한다.
   - `Documents/DevLog/YYYY-MM-DD.md` 및 `Documents/DevLog/_Last30Summary.md` 파일을 업데이트한다.
-- **참고**: DevLog 에이전트의 상세 동작 지침은 `AgentRule/DevLog-Agent.md`를 참조한다.
+- **참고**: DevLog 에이전트의 상세 동작 지침은 `AgentRule/devlog_agent.md`를 참조한다.
