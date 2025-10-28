@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/woowahan/Baemin_DoHyeon.css');
+
+:root {
+  --primary-color: #111418;
+  --accent-blue: #3B82F6;
+  --text-muted: #6B7280;
+  --font-title: 'BaeMin_DoHyeon', 'Malgun Gothic', sans-serif;
+  --size-h1: 48px;
+  --size-h3: 26px;
+  --size-body: 19px;
+  --spacing-xs: 8px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+}
+
+body {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--font-title);
+  font-size: var(--size-h3);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+p {
+  font-size: var(--size-body);
+  line-height: 1.6;
+  margin: 0;
+}
+  </style>
+</head>
+<body style="width: 960px; height: 540px; padding: var(--spacing-lg);">
+  <div>
+    <h1 style="color: var(--primary-color); margin-bottom: var(--spacing-md);">UI/UX 개선</h1>
+    
+    <div style="margin-bottom: var(--spacing-md);">
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">팝업 시스템 리팩토링</h3>
+      <p style="color: var(--text-muted);">기존 블루프린트 기반 팝업을 C++ 클래스로 재작성하여 성능 개선, 닫기 기능 및 데이터 연동 로직 보강</p>
+    </div>
+    
+    <div style="margin-bottom: var(--spacing-md);">
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">채팅 시스템 개선</h3>
+      <p style="color: var(--text-muted);">별도 모듈로 구현, 메시지 데이터를 구조체로 관리하여 시스템 확장성 향상</p>
+    </div>
+    
+    <div style="margin-bottom: var(--spacing-md);">
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">로딩 UI 통일</h3>
+      <p style="color: var(--text-muted);">전역 로딩 서클과 관리 시스템 도입으로 일관된 로딩 경험 제공</p>
+    </div>
+    
+    <div>
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">NPC 상호작용 UI</h3>
+      <p style="color: var(--text-muted);">'다산' NPC 상태 표시 위젯 및 질의응답 UI 기본 구조 구현</p>
+    </div>
+  </div>
+</body>
+</html>

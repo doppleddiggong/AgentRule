@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/woowahan/Baemin_DoHyeon.css');
+
+:root {
+  --primary-color: #111418;
+  --accent-blue: #3B82F6;
+  --text-muted: #6B7280;
+  --secondary-color: #E5E7EB;
+  --font-title: 'BaeMin_DoHyeon', 'Malgun Gothic', sans-serif;
+  --size-h1: 48px;
+  --size-body: 18px;
+  --size-small: 15px;
+  --spacing-xs: 8px;
+  --spacing-md: 24px;
+}
+
+body {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  font-size: var(--size-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+  </style>
+</head>
+<body style="width: 960px; height: 540px; padding: 32px 32px 56px 32px;">
+  <div>
+    <h1 style="color: var(--primary-color); margin-bottom: var(--spacing-md);">해결된 주요 문제</h1>
+    
+    <div style="background: var(--secondary-color); padding: 10px; margin-bottom: 10px; border-left: 4px solid var(--accent-blue); border-radius: 4px;">
+      <p><strong>MegaPopup 리소스 해제 오류</strong> <span style="color: var(--text-muted); font-size: var(--size-small);">(2025-10-20)</span></p>
+      <p style="color: var(--text-muted); margin-top: var(--spacing-xs); font-size: var(--size-body);">위젯이 닫힐 때 사운드 등 리소스가 정상 해제되지 않던 문제 수정</p>
+    </div>
+    
+    <div style="background: var(--secondary-color); padding: 10px; margin-bottom: 10px; border-left: 4px solid var(--accent-blue); border-radius: 4px;">
+      <p><strong>CoffeeToolbar 플러그인 설정 오류</strong> <span style="color: var(--text-muted); font-size: var(--size-small);">(2025-10-23)</span></p>
+      <p style="color: var(--text-muted); margin-top: var(--spacing-xs); font-size: var(--size-body);">프로젝트 레벨에서 설정이 로드되지 않던 문제 해결</p>
+    </div>
+    
+    <div style="background: var(--secondary-color); padding: 10px; margin-bottom: 10px; border-left: 4px solid var(--accent-blue); border-radius: 4px;">
+      <p><strong>채팅 입력 포커스 전환 오류</strong> <span style="color: var(--text-muted); font-size: var(--size-small);">(2025-10-23)</span></p>
+      <p style="color: var(--text-muted); margin-top: var(--spacing-xs); font-size: var(--size-body);">게임과 UI 간의 포커스가 올바르게 전환되지 않던 문제 수정</p>
+    </div>
+    
+    <div style="background: var(--secondary-color); padding: 10px; border-left: 4px solid var(--accent-blue); border-radius: 4px;">
+      <p><strong>멀티플레이 위치 동기화 오류</strong> <span style="color: var(--text-muted); font-size: var(--size-small);">(2025-10-25)</span></p>
+      <p style="color: var(--text-muted); margin-top: var(--spacing-xs); font-size: var(--size-body);">호스트가 클라이언트 위치 정보를 덮어쓰던 동기화 문제 해결</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/woowahan/Baemin_DoHyeon.css');
+
+:root {
+  --primary-color: #111418;
+  --accent-blue: #3B82F6;
+  --text-muted: #6B7280;
+  --font-title: 'BaeMin_DoHyeon', 'Malgun Gothic', sans-serif;
+  --size-h1: 48px;
+  --size-h3: 26px;
+  --size-body: 19px;
+  --spacing-xs: 8px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+}
+
+body {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--font-title);
+  font-size: var(--size-h3);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+p {
+  font-size: var(--size-body);
+  line-height: 1.6;
+  margin: 0;
+}
+  </style>
+</head>
+<body style="width: 960px; height: 540px; padding: var(--spacing-lg);">
+  <div>
+    <h1 style="color: var(--primary-color); margin-bottom: var(--spacing-md);">네트워크 및 멀티플레이어</h1>
+    
+    <div style="margin-bottom: var(--spacing-md);">
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">로비 시스템</h3>
+      <p style="color: var(--text-muted);">세션 생성(Host), 참여(Join), 연결 끊기 등 멀티플레이어 로비의 핵심 기능 구현</p>
+    </div>
+    
+    <div style="margin-bottom: var(--spacing-md);">
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">심리스 트래블</h3>
+      <p style="color: var(--text-muted);">ServerTravel을 활용한 맵 간 끊김 없는 이동, 전환 레벨(Transition Level) 구현</p>
+    </div>
+    
+    <div>
+      <h3 style="color: var(--accent-blue); margin-bottom: var(--spacing-xs);">동기화 문제 해결</h3>
+      <p style="color: var(--text-muted);">호스트 플레이어가 다른 클라이언트의 위치를 덮어쓰던 문제 해결, 위치 동기화 정확도 향상</p>
+    </div>
+  </div>
+</body>
+</html>

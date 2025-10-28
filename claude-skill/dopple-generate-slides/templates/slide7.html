@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/woowahan/Baemin_DoHyeon.css');
+
+:root {
+  --primary-color: #111418;
+  --accent-orange: #F97316;
+  --text-muted: #6B7280;
+  --font-title: 'BaeMin_DoHyeon', 'Malgun Gothic', sans-serif;
+  --size-h1: 48px;
+  --size-h3: 24px;
+  --size-body: 18px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+}
+
+body {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--font-title);
+  font-size: var(--size-h3);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+ul {
+  font-size: var(--size-body);
+  line-height: 1.7;
+  margin: 0;
+  padding-left: var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+}
+  </style>
+</head>
+<body style="width: 960px; height: 540px; padding: var(--spacing-lg);">
+  <div>
+    <h1 style="color: var(--primary-color); margin-bottom: var(--spacing-md);">향후 과제 (TODO)</h1>
+    
+    <div class="row" style="display: flex; gap: var(--spacing-md);">
+      <div class="col" style="flex: 1;">
+        <h3 style="color: var(--accent-orange); margin-bottom: var(--spacing-sm);">🔴 High Priority</h3>
+        <ul>
+          <li>로비 UI 재설계 및 단계적 도입</li>
+          <li>음성 시스템 장시간 부하 테스트</li>
+          <li>'ASK' 기능 완성 및 UX 정의</li>
+        </ul>
+      </div>
+      
+      <div class="col" style="flex: 1;">
+        <h3 style="color: var(--text-muted); margin-bottom: var(--spacing-sm);">🟡 Medium Priority</h3>
+        <ul>
+          <li>NPC 상태 머신 최적화</li>
+          <li>디버그 로깅 시스템 추가</li>
+          <li>의존성 전수 검사</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/woowahan/Baemin_DoHyeon.css');
+
+:root {
+  --primary-color: #111418;
+  --accent-blue: #3B82F6;
+  --text-muted: #6B7280;
+  --secondary-color: #E5E7EB;
+  --font-title: 'BaeMin_DoHyeon', 'Malgun Gothic', sans-serif;
+  --size-h1: 48px;
+  --size-h2: 36px;
+  --size-body: 20px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+}
+
+body {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: var(--size-h2);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+p {
+  font-size: var(--size-body);
+  line-height: 1.6;
+  margin: 0;
+}
+  </style>
+</head>
+<body style="width: 960px; height: 540px; padding: var(--spacing-lg);">
+  <div>
+    <h1 style="color: var(--primary-color); margin-bottom: var(--spacing-md);">개발 메트릭 요약</h1>
+    
+    <div class="row" style="display: flex; gap: var(--spacing-md); margin-bottom: var(--spacing-xl);">
+      <div style="flex: 1; background: var(--secondary-color); padding: var(--spacing-md); border-radius: 8px; text-align: center;">
+        <h2 style="color: var(--accent-blue);">50+</h2>
+        <p style="color: var(--text-muted);">총 커밋 수</p>
+      </div>
+      
+      <div style="flex: 1; background: var(--secondary-color); padding: var(--spacing-md); border-radius: 8px; text-align: center;">
+        <h2 style="color: var(--accent-blue);">3</h2>
+        <p style="color: var(--text-muted);">주요 기여자</p>
+      </div>
+      
+      <div style="flex: 1; background: var(--secondary-color); padding: var(--spacing-md); border-radius: 8px; text-align: center;">
+        <h2 style="color: var(--accent-blue);">7일</h2>
+        <p style="color: var(--text-muted);">개발 기간</p>
+      </div>
+    </div>
+    
+    <div style="background: var(--secondary-color); padding: var(--spacing-lg); border-radius: 8px; text-align: center;">
+      <p style="color: var(--primary-color); font-size: var(--size-body);">
+        <strong>기여자:</strong> dopple, Ju100, kbm
+      </p>
+      <p style="color: var(--text-muted); margin-top: var(--spacing-sm); font-size: 16px;">
+        일부 개발일지에서 git log 파싱 문제로 정확한 집계에 어려움이 있었습니다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

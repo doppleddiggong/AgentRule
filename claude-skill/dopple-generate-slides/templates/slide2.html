@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/woowahan/Baemin_DoHyeon.css');
+
+:root {
+  --primary-color: #111418;
+  --accent-blue: #3B82F6;
+  --font-title: 'BaeMin_DoHyeon', 'Malgun Gothic', sans-serif;
+  --size-h1: 48px;
+  --size-body: 20px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+}
+
+body {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+ul {
+  font-size: var(--size-body);
+  line-height: 1.8;
+  margin: 0;
+  padding-left: var(--spacing-lg);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+}
+
+strong {
+  color: var(--accent-blue);
+}
+  </style>
+</head>
+<body style="width: 960px; height: 540px; padding: var(--spacing-lg);">
+  <div>
+    <div style="border-bottom: 3px solid var(--accent-blue); padding-bottom: var(--spacing-sm);">
+      <h1 style="color: var(--primary-color);">주요 변경 사항</h1>
+    </div>
+    <ul style="margin-top: var(--spacing-md);">
+      <li><strong>네트워크 및 멀티플레이어:</strong> 로비 시스템 골격 완성, 심리스 트래블 구현, 모듈형 채팅 시스템 도입</li>
+      <li><strong>NPC 및 상호작용:</strong> '다산' NPC 가이드 투어 및 질의응답 기능 개발, GameState 중심 상태 통합</li>
+      <li><strong>음성 시스템:</strong> 음성 명령('소환'), TTS, 오디오 리샘플링 등 전체 파이프라인 재구성</li>
+      <li><strong>UI/UX:</strong> 팝업, 로딩, 채팅 UI를 C++로 리팩토링, 전역 로딩 및 다이얼로그 시스템 도입</li>
+      <li><strong>코어 시스템:</strong> 비동기 로딩 로직을 Game Instance Subsystem으로 이전, 플러그인 설정 오류 해결</li>
+    </ul>
+  </div>
+</body>
+</html>
